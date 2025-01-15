@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Check</title>
+</head>
+<body>
+    <script>
+    function prime(num) {
+        if (num <= 1) {
+            return false;  
+        }
+
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                return false;  
+            }
+        }
+
+        return true; 
+    }
+
+    const number = 10;
+    const result = prime(number);  
+    console.log(result); 
+    document.write(  "  " + result);  
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let word=function(a,b)
+        {
+            a=a.toLowerCase()
+            b=b.toLowerCase()
+            if (a.length!==b.length)
+        {
+            return false;
+        }
+        let c=a.split("").sort().join("")
+        
+        let d=b.split("").sort().join("")
+        return c==d
+        }
+        document.write(word('abc','bcak'))
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let words = ['banana', 'apple', 'grape', 'orange'];
+
+
+for (let i = 0; i < words.length; i++) {
+    
+    for (let j = i + 1; j < words.length; j++) {
+        
+        if (words[i].toLowerCase() > words[j].toLowerCase()) {
+            let temp = words[i];
+            words[i] = words[j];
+            words[j] = temp;
+        }
+    }
+}
+
+document.write(words);
+
+    </script>
+</body>
+</html>
